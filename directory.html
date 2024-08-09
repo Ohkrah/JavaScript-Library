@@ -2,87 +2,178 @@
 <html>
 
 <head>
-  <title>JS </title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/directory.css">
-  <!--<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>JS </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/directory.css">
+    <!--<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <h1>Welcome to the store!</h1>
-    <p>
-      When you change the screen size, the product cards will change layouts
-      so you can view them comfortably no matter how small the screen gets!
-    </p>
-  </header>
+    <header class="header">
+        <h1>Welcome to the store!</h1>
+        <p>
+            When you change the screen size, the product cards will change layouts
+            so you can view them comfortably no matter how small the screen gets!
+        </p>
+    </header>
 
-  <!--back button to brink back to search-->
-  <!--Header (Search result)-->
-  <!--Card with result (Syntax result name) in quotations x3-->
-  <!--Code description button-->
-  <!--small pop-up box to show the description when clicked-->
-  <!--example button-->
-  <!--small pop-up box to show the example when clicked-->
-  <!--Try me button-->
-  <!--Modal pop up-->
-  <div class="modal" id="modal">
-    <!--back button to results-->
-    <button class="modal-back" type="button" id="back-button-modal">Button</button>
-    <!--Instructions-->
-    <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
-    <!--draggable box-->
-    <section id="draggable-box"><!--draggable box variable content here--></section>
-    <!--option one of drag locaction-->
-    <section class="location-box"><!--location box variable content here--></section>
-    <!--option two of drag locaction-->
-    <section class="location-box"><!--location box variable 2 content here--></section>
-    <!--option three of drag locaction-->
-    <section class="location-box"><!--location box variable 3 content here--></section>
-    <!--words to show user they are inccorect/correct-->
-    <h3 id="response"><!--user correct/incorrect--></h3>
+    <!--back button to brink back to search-->
+    <!--Header (Search result)-->
+    <!--Card with result (Syntax result name) in quotations x3-->
+    <!--Code description button-->
+    <!--small pop-up box to show the description when clicked-->
+    <!--example button-->
+    <!--small pop-up box to show the example when clicked-->
+    <!--Try me button-->
+    <!--Modal pop up-->
+    <div class="modal" id="modal">
+        <!--back button to results-->
+        <button class="modal-back" type="button" id="back-button-modal">Button</button>
+        <!--Instructions-->
+        <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
+        <!--draggable box-->
+        <section id="draggable-box"><!--draggable box variable content here--></section>
+        <!--option one of drag locaction-->
+        <section class="location-box"><!--location box variable content here--></section>
+        <!--option two of drag locaction-->
+        <section class="location-box"><!--location box variable 2 content here--></section>
+        <!--option three of drag locaction-->
+        <section class="location-box"><!--location box variable 3 content here--></section>
+        <!--words to show user they are inccorect/correct-->
+        <h3 id="response"><!--user correct/incorrect--></h3>
+    </div>
+    <!--video button-->
+    <!--link to tutorial playlist in new page-->
+
+    <!--API links-->
+
+    <main>
+        
+        <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Example</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+
+            <header>Console.log()</header>
+            <p>Decription: A built-in function that allows you to output messages or values to the console</p>
+            <p>Example: <br>
+                <p>console.log()</p>
+                <footer class="card-footer">
+                    <a href="#" class="card-footer-item">Try me</a>
+                    <a href="#" class="card-footer-item">Video</a> </footer>
+                </div>
+            
+        </div>
+    </div>
   </div>
-  <!--video button-->
-  <!--link to tutorial playlist in new page-->
+        <br>
+        
+        <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Data Types</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+            <header>Description:</header>
+            <p>Data types are values that can be strings , numbers , and booleans</p>
 
-  <!--API links-->
+            <header>String " "</header>
+            <p>Description:</p><br>
+            <p>A string is surrounded by quotes </p>
+            <p>Example:<br> const string = “ example string”;</p>
+        
 
-  <main>
-    <section class="card">
-      <header>Console.log()</header>
-      <p>Decription: A built-in function that allows you to output messages or values to the console</p>
-      <p>Example:</p>
-      <button type="button">Try Me!</button> <button type="button">Video</button>
-    </section>
-    <br>
-    <section class="card">
-      <header>String, Numbers , boolean</header>
-      <p>Description: Data types A string is surrounded by quotes , A number can also be a decimal, A boolean  are values that can be either true/false</p>
-      <p>Example:</p>
-      <button type="button">Try Me!</button> <button type="button">Video</button>
-    </section>
-    <br>
-    <section class="card">
-      <header>Variables </header>
-      <p>Description: A variable is a container that is created to store , numbers, booleans</p>
-      <p>Example:</p>
-      <button type="button">Try Me!</button> <button type="button">Video</button>
-    </section>
-    <br>
-    <section class="card">
-      <header>Array</header>
-      <p>Description: An array will carry , strings , number, booleans for a variable </p>
-      <p>Example:</p>
-      <button type="button">Try Me!</button> <button type="button">Video</button>
-    </section>
-  </main>
+        
+            <header>Numbers </header>
+            <p>Description: A Number can also de decimal </p>
+            <p>Example:<br>const number = 100;</p>
+        
+
+        
+            <header>Boolean</header>
+            <p>Decription: A boolean are values that can either be true/ false </p>
+            <p>Example: <br>Const boolean = True;
+                <br>Const boolean = False;
+            </p>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Try me</a>
+                <a href="#" class="card-footer-item">Video</a>
+                
+              </footer>
+            </div>
+
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Variables</p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+        
+            <header>Description:</header>
+
+            <p> A variable is a container that is created to store , numbers, booleans</p>
+            <p>Let</p><br>
+            <p> Example: </p><br>
+            <p>Let variablename = ___;</p><br>
+            
+            <p>Const </p>
+            <p> Example:</p><br>
+            <p>Const variablename = ___;</p>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Try me</a>
+                <a href="#" class="card-footer-item">Video</a>
+                
+              </footer>
+            </div>
+        
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Component</p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+            <header>Array</header>
+            <p>Description: An array will carry , strings , number, booleans for a variable </p>
+            <p>[]</p>
+            <p>Example:</p><br>
+            <p>const variablename = [ ] ;</p>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Try Me </a>
+                <a href="#" class="card-footer-item">Video</a>
+                
+              </footer>
+            </div>
+  
+    </main>
 </body>
 
 
-  
+
 
 
 </html>
