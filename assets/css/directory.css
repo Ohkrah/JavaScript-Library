@@ -20,3 +20,41 @@
     text-decoration: underline;
     font-size: 17px;
 }
+.modal{
+    width: 200px;
+    height: 400px;
+    display: block;
+}
+.modal-back{
+    text-decoration: underline;
+    text-decoration: blue;
+}
+#Instructions{
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.draggable-box{
+    width: 14px;
+    height: 6px;
+    background-color: lightgrey;
+    text-decoration: black;
+}
+.location-box{
+    width: 14px;
+    height: 6px;
+    background-color: lightgrey;
+    text-decoration: black;
+}
+#reponseIncorrect{
+    text-align: justify;
+    text-decoration: red;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#responseCorrect{
+    text-align: justify;
+    text-decoration: green;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
