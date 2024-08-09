@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "shadowFont";
+    src: url("../fonts/shadow.ttf") format("trueType");
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-family: "shadowFont", sans-serif;
+    font-size: 60px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.card header {
+    text-decoration: underline;
+    font-size: 17px;
+}
