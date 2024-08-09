@@ -20,39 +20,46 @@
     text-decoration: underline;
     font-size: 17px;
 }
-.modal{
+
+.modal {
     width: 200px;
     height: 400px;
     display: block;
 }
-.modal-back{
+
+.modal-back {
     text-decoration: underline;
     text-decoration: blue;
 }
-#Instructions{
+
+#Instructions {
     text-align: justify;
     font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-.draggable-box{
+
+.draggable-box {
     width: 14px;
     height: 6px;
     background-color: lightgrey;
     text-decoration: black;
 }
-.location-box{
+
+.location-box {
     width: 14px;
     height: 6px;
     background-color: lightgrey;
     text-decoration: black;
 }
-#reponseIncorrect{
+
+#reponseIncorrect {
     text-align: justify;
     text-decoration: red;
     font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-#responseCorrect{
+
+#responseCorrect {
     text-align: justify;
     text-decoration: green;
     font-size: 10px;
