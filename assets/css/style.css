@@ -29,10 +29,11 @@
 .description {
     font-size: 25px;
     text-align: center;
+    padding: 20px;
 }
 
 .repo {
     font-size: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 15px;
 }
