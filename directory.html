@@ -47,8 +47,22 @@
             <!--small pop-up box to show the example when clicked-->
             <p>Example:</p>
             <!--Try me button-->
-            <button type="button">Try Me!</button> <button type="button">Video</button>
+            <!-- Html for YT modal -->
+            <button type="button">Try Me!</button> <button type="button" class="js-modal-trigger"
+                data-target="modal-console-log">Video</button>
         </section>
+        <div id="modal-console-log" class="modal container">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L8CDt1J3DAw?si=BzngbSqWCmcvkwMX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
         <br>
         <!--Card with result (Syntax result name) in quotations [2]-->
         <section class="card">
@@ -62,6 +76,7 @@
             <!--Try me button-->
             <button type="button">Try Me!</button> <button type="button">Video</button>
         </section>
+        
         <br>
         <!--Card with result (Syntax result name) in quotations [3]-->
         <section class="card">
@@ -111,7 +126,7 @@
     <!--API links-->
 
 
-
+    <script src="./assets/js/modal.js"></script>
 
 </body>
 

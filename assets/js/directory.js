@@ -25,3 +25,15 @@ const arrays = [ADescription, AExample, ALocationBox[0], ALocationBox[1], ALocat
 //Card array links
 let cards = [consoleLog, dataTypes, variables, arrays];
 
+function youTubeSearch(search) {
+    const url=`https://www.googleapis.com/youtube/v3/search?q=${search}`
+   fetch (url) 
+   .then(function(response) {
+    console.log (response)
+    return response.json()
+    
+   }).then(function (data){
+    console.log (data)
+   })
+}
+youTubeSearch("javascript")
