@@ -25,3 +25,8 @@ const arrays = [ADescription, AExample, ALocationBox[0], ALocationBox[1], ALocat
 //Card array links
 let cards = [consoleLog, dataTypes, variables, arrays];
 
+/* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
+function theFunction(){
+const popup = document.getElementbyId("popUp");
+popup.toogle("show");
+} */
