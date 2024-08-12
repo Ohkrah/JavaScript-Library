@@ -74,9 +74,23 @@
             <!--small pop-up box to show the example when clicked-->
             <p>Example:</p>
             <!--Try me button-->
-            <button type="button">Try Me!</button> <button type="button">Video</button>
+            <button type="button">Try Me!</button> <button type="button" class="js-modal-trigger"
+                data-target="modal-string-numbers-boolean">Video</button>
         </section>
-        
+        <!-- Strings modal -->
+        <div id="modal-string-numbers-boolean" class="modal container">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XYCvDfnDjeo?si=sYQswthkxiSEkTsy"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+
         <br>
         <!--Card with result (Syntax result name) in quotations [3]-->
         <section class="card">
@@ -87,8 +101,23 @@
             <!--small pop-up box to show the example when clicked-->
             <p>Example:</p>
             <!--Try me button-->
-            <button type="button">Try Me!</button> <button type="button">Video</button>
+            <button type="button">Try Me!</button> <button type="button" class="js-modal-trigger"
+                data-target="modal-variables">Video</button>
         </section>
+        <!-- Variables Modal -->
+        <div id="modal-variables" class="modal container">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ghCbURMWBD8?si=3oRaPS7B3DPR5ISq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+        </div>
         <br>
         <!--Card with result (Syntax result name) in quotations [4]-->
         <section class="card">
@@ -99,8 +128,22 @@
             <!--small pop-up box to show the example when clicked-->
             <p>Example:</p>
             <!--Try me button-->
-            <button type="button">Try Me!</button> <button type="button">Video</button>
+            <button type="button">Try Me!</button> <button type="button" class="js-modal-trigger"
+                data-target="modal-array">Video</button>
         </section>
+        <div id="modal-array" class="modal container">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oigfaZ5ApsM?si=kSvDwG1vnkO_2iCH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"></button>
+        </div>
     </main>
     <!--create modal for try me-->
     <div class="modal" id="modal-popUp"> <!--add `is-active` to class to test modal-->
