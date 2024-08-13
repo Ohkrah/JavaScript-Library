@@ -7,30 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/directory.css">
     <!--<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />-->
+    <!--bulma framework-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>JS </title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/directory.css">
-    <!--<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <!--bootstrap framework-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
     <header class="header">
-        <h1>Welcome to the store!</h1>
+        <h1>Welcome to the JavaScript Library!</h1>
         <p>
             When you change the screen size, the product cards will change layouts
             so you can view them comfortably no matter how small the screen gets!
-        </p>
-    </header>
-    <header class="header">
-        <h1>Welcome to the store!</h1>
-        <p>
-            When you change the screen size, the product cards will change layouts
-            so you can view them comfortably no matter how small the screen gets!
+            <!--Change this to something relevant^-->
         </p>
     </header>
 
@@ -40,12 +29,12 @@
     <main>
         <!--Card with result (Syntax result name) in quotations [1]-->
         <section class="card">
-            <header>Console.log()</header>
+            <header id="cardTitle">Console.log()</header>
             <!--Code description button-->
-            <p>Decription: A built-in function that allows you to output messages or values to the console</p>
+            <p id = "description">Decription: A built-in function that allows you to output messages or values to the console</p>
             <!--example button-->
             <!--small pop-up box to show the example when clicked-->
-            <p>Example:</p>
+            <p id="example">Example:</p>
             <!--Try me button-->
             <button type="button">Try Me!</button> <button type="button">Video</button>
         </section>
@@ -87,36 +76,43 @@
             <button type="button">Try Me!</button> <button type="button">Video</button>
         </section>
     </main>
+
     <!--create modal for try me-->
-    <div class="modal" id="modal-popUp"> <!--add `is-active` to class to test modal-->
+    <div class="modal is-active" id="modal-popUp"> <!--add `is-active` to class to test modal-->
         <!--back button to results-->
         <button class="modal-back" type="button" id="back-button-modal">Button</button>
         <!--Instructions-->
-        <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
-        <!--draggable box-->
-        <section class="draggable-box"><!--draggable box variable content here--></section>
-        <!--option one of drag locaction-->
-        <section class="location-box"><!--location box variable content here--></section>
-        <!--option two of drag locaction-->
-        <section class="location-box"><!--location box variable 2 content here--></section>
-        <!--option three of drag locaction-->
-        <section class="location-box"><!--location box variable 3 content here--></section>
+        <li class="boxesList">
+            <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
+            <!--draggable box-->
+            <section id="draggableBox" class="draggable-box"><!--draggable box variable content here--></section>
+            <!--option one of drag locaction-->
+            <section id="locationBox1" class="location-box"><!--location box variable content here--></section>
+            <!--option two of drag locaction-->
+            <section id= "locationBox2" class="location-box"><!--location box variable 2 content here--></section>
+            <!--option three of drag locaction-->
+            <section id="locationBox3" class="location-box"><!--location box variable 3 content here--></section>
+        </li>
         <!--words to show user they are inccorect/correct-->
         <h3 id="response"><!--user correct/incorrect--></h3>
     </div>
     <!--video button-->
     <!--link to tutorial playlist in new page-->
 
-    <!--API links-->
-    <!--API links-->
-
-
-
-
+    
+    
+    
+    
 </body>
 
-<script src=".\assets\js\directory.js"></script>
+<!--API links-->
+<!--Jquery Draggable Droppable-->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+<!--API links-->
 
+<!--Link to directory.js-->
+<script src=".\assets\js\directory.js"></script>
 
 
 </html>
