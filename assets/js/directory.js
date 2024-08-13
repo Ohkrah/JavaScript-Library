@@ -44,7 +44,164 @@ const ALocationBox = ["2, 6, 7", `[2, 6, 7]`, "array"];
 const ADraggableBox = `let array = [2, 6, 7]; \nconsole.log(array);`;
 const arrays = [ADescription, AExample, ALocationBox, ADraggableBox, AName];
 //Card array links
-let cards = [consoleLog, dataTypes, variables, arrays];
+let cards = [consoleLog, dataTypes, variables, arrays];//holds the arrays that access the variables for card values
+/*temporarily add array to local storage to test functionality*/
+let testArray = ["Array" , "data types"];
+//Initialize searchValue variable
+let searchValue;
+localStorage.setItem("searchResult", JSON.stringify(testArray));
+//intialize card example number
+let cardExampleNum;
+let DBExample;
+
+function modalOpperation(){
+//load search result from local storage
+const searchResult = JSON.parse(localStorage.getItem(`searchResult`));
+function searchCompare(){
+    if (JSON.stringify(cards).includes(JSON.stringify(searchResult[0]))){
+        searchValue = searchResult[0];
+    }
+    else {
+        //take to error page
+    }
+}
+//cards loader function
+function cardLoader(){
+    //Console Log
+    if(searchValue == cards[0][4]){
+        cardTitle.replaceChildren(cards[0][4]);
+        description.replaceChildren(cards[0][0]);
+        example.replaceChildren(cards[0][1]);
+        LB1.replaceWith(cards[0][2][0]);
+        LB2.replaceChildren(cards[0][2][1]);
+        LB3.replaceChildren(cards[0][2][2]);
+        DB.replaceChildren(cards[0][3]);
+        cardExampleNum = 0;
+    }
+
+    //Data Types
+    if(searchValue == cards[1][4]){
+        cardTitle.replaceChildren(cards[1][4]);
+        description.replaceChildren(cards[1][0]);
+        example.replaceChildren(cards[1][1]);
+        LB1.replaceChildren(cards[1][2][0]);
+        LB2.replaceChildren(cards[1][2][1]);
+        LB3.replaceChildren(cards[1][2][2]);
+        DB.replaceChildren(cards[1][3]);
+        cardExampleNum=1;
+    }
+    //Variables
+    if(searchValue ==cards[2][4]){
+        cardTitle.replaceChildren(cards[2][4]);
+        description.replaceChildren(cards[2][0]);
+        example.replaceChildren(cards[2][1]);
+        LB1.replaceChildren(cards[2][2][0]);
+        LB2.replaceChildren(cards[2][2][1]);
+        LB3.replacChildren(cards[2][2][2]);
+        DB.replaceChildren(cards[2][3]);
+        cardExampleNum = 2;
+    }
+    //Arrays
+    if(searchValue == cards[3][4]){
+        cardTitle.replaceChildren(cards[3][4]);
+        description.replaceChildren(cards[3][0]);
+        example.replaceChildren(cards[3][1]);
+        LB1.replaceChildren(cards[3][2][0]);
+        LB2.replaceChildren(cards[3][2][1]);
+        LB3.replaceChildren(cards[3][2][2]);
+        DB.replaceChildren(cards[3][3]);
+        cardExampleNum=3;
+    }
+}
+//run functions 
+searchCompare();
+cardLoader();
+//Modal back button
+const modal = document.getElementById(`modal-popUp`);
+const modalBackButton = document.getElementById(`back-button-modal`);
+modalBackButton.addEventListener(`click`, function (modal){
+    document.getElementById(`modal-popUp`).classList.remove("is-active");
+});
+//detect if draggable matches correct location box and set valueMatch to hold this boolean
+let valueMatch;
+const LBVariableArray = [0, 1, 2, 0];
+const LBCorrectAnswer = [$(CLLocationBox[0]), $(DTLocationBox[1]), $(VLocationBox[2]), $(ALocationBox[0])];
+DBExample = [$(CLLocationBox[0]), $(DTLocationBox[1]), $(VLocationBox[2]), $(ALocationBox[0])];
+LBVariable = LBVariableArray[cardExampleNum];
+function valueMatchTest(){
+    if(DBExample[cardExampleNum] === LBVariable[cardExampleNum]){
+        valueMatch = true
+    }
+    else{
+        valueMatch = false
+    }
+}
+valueMatchTest();
+//create function to test for all LB values match DB
+//function LBCheck(){
+            //add event listener to recognize when draggable is on droppable
+            LB1.addEventListener(`mouseenter`,function(){
+                LB1Status=true;
+            })
+            LB2.addEventListener(`mouseenter`,function(){
+                LB2Status=true;
+            })
+            LB3.addEventListener(`mouseenter`,function(){
+                LB3Status=true;
+            })
+//}
+
+//intialize function to check status of each box and print out correct, if statement is true
+const checkStatus = function(){
+    if(LB1Status && valueMatch){$(`#response`).addClass("responseCorrect");
+        $(`#response`).removeClass("responseIncorrect");
+        response.replaceChildren("You are correct!!");
+    }
+    if(LB2Status && valueMatch){$(`#response`).addClass("responseCorrect")
+        $(`#response`).removeClass("responseIncorrect");
+        response.replaceChildren("You are correct!!");
+    }
+    if(LB3Status && valueMatch){$(`#response`).addClass("responseCorrect")
+        $(`#response`).removeClass("responseIncorrect");
+        response.replaceChildren("You are correct!!");
+    }
+     //change display message if user is correct in drag location 1
+    else if (valueMatch === false){$(`#response`).addClass("responseIncorrect")
+        $(`#response`).removeClass("responseCorrect");
+        response.replaceChildren("You are incorrect, try again");
+    }
+}
+
+//Draggable/Droppable function from Jquery API
+$( function() {
+    $( "#draggableBox" ).draggable();
+    $( ".location-box").droppable({
+        drop: function( event, ui ) {
+            //LBCheck();
+            valueMatchTest();
+            checkStatus();
+            UserCorrectTest();
+      }
+    });
+  } );
+//User correct test
+function UserCorrectTest(){
+    //LBCheck();
+    valueMatchTest();
+    checkStatus();
+    console.log(LB1Status, LB2Status, LB3Status);
+}
+
+}
+
+modalOpperation();
+/* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
+function theFunction(){
+const popup = document.getElementbyId("popUp");
+popup.toogle("show");
+} */
+
+//Bradyn JS Code
 
 //4 modals we are interacting with
 //const modalConsole = document.getElementById ("modal-popUp-console");
