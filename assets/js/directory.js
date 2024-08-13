@@ -53,6 +53,8 @@ localStorage.setItem("searchResult", JSON.stringify(testArray));
 //intialize card example number
 let cardExampleNum;
 let DBExample;
+
+function modalOpperation(){
 //load search result from local storage
 const searchResult = JSON.parse(localStorage.getItem(`searchResult`));
 function searchCompare(){
@@ -152,16 +154,20 @@ valueMatchTest();
 //intialize function to check status of each box and print out correct, if statement is true
 const checkStatus = function(){
     if(LB1Status && valueMatch){$(`#response`).addClass("responseCorrect");
+        $(`#response`).removeClass("responseIncorrect");
         response.replaceChildren("You are correct!!");
     }
     if(LB2Status && valueMatch){$(`#response`).addClass("responseCorrect")
+        $(`#response`).removeClass("responseIncorrect");
         response.replaceChildren("You are correct!!");
     }
     if(LB3Status && valueMatch){$(`#response`).addClass("responseCorrect")
+        $(`#response`).removeClass("responseIncorrect");
         response.replaceChildren("You are correct!!");
     }
      //change display message if user is correct in drag location 1
     else if (valueMatch === false){$(`#response`).addClass("responseIncorrect")
+        $(`#response`).removeClass("responseCorrect");
         response.replaceChildren("You are incorrect, try again");
     }
 }
@@ -185,6 +191,10 @@ function UserCorrectTest(){
     checkStatus();
     console.log(LB1Status, LB2Status, LB3Status);
 }
+
+}
+
+modalOpperation();
 /* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
 function theFunction(){
 const popup = document.getElementbyId("popUp");

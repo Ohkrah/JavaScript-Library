@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 
 <head>
     <title>JS </title>
@@ -45,6 +45,7 @@
                         <div class="media-content">
                             <p class="title is-8" id="cardTitle"></p>
                             <p class="subtitle is-4"></p>
+                            <p class="subtitle is-4" id="example"></p>
                         </div>
                     </div>
     
@@ -57,7 +58,19 @@
                 <footer class="card-footer">
                     <a href="#" class="card-footer-item">Example</a>
                     <a href="#" class="card-footer-item">Try me</a>
-                    <a href="#" class="card-footer-item">Video</a>
+                    <a href="#" class="card-footer-item js-modal-trigger">Video</a>
+                        <!-- YouTube modal -->
+                        <div id="modal-string-numbers-boolean" class="modal container">
+                            <div class="modal-background"></div>
+                    
+                            <div class="modal-content">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/L8CDt1J3DAw?si=BzngbSqWCmcvkwMX"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            </div>
+                        </div>
                 </footer>
             </div>
         </div>
@@ -96,11 +109,12 @@
 </body>
 
 <!--API links-->
+<!--Youtube API-->
+<script src="./assets/js/youtubeModal.js"></script>
 <!--Jquery Draggable Droppable-->
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <!--API links-->
-
 <!--Link to directory.js-->
 <script src=".\assets\js\directory.js"></script>
 
