@@ -136,18 +136,18 @@ function valueMatchTest(){
 }
 valueMatchTest();
 //create function to test for all LB values match DB
-function LBCheck(){
+//function LBCheck(){
             //add event listener to recognize when draggable is on droppable
-            LB1.addEventListener(`dragend`,function(){
+            LB1.addEventListener(`mouseenter`,function(){
                 LB1Status=true;
             })
-            LB2.addEventListener(`dragend`,function(){
+            LB2.addEventListener(`mouseenter`,function(){
                 LB2Status=true;
             })
-            LB3.addEventListener(`dragend`,function(){
+            LB3.addEventListener(`mouseenter`,function(){
                 LB3Status=true;
             })
-}
+//}
 
 //intialize function to check status of each box and print out correct, if statement is true
 const checkStatus = function(){
@@ -171,7 +171,7 @@ $( function() {
     $( "#draggableBox" ).draggable();
     $( ".location-box").droppable({
         drop: function( event, ui ) {
-            LBCheck();
+            //LBCheck();
             valueMatchTest();
             checkStatus();
             UserCorrectTest();
@@ -180,7 +180,8 @@ $( function() {
   } );
 //User correct test
 function UserCorrectTest(){
-    LBCheck();
+    //LBCheck();
     valueMatchTest();
     checkStatus();
+    console.log(LB1Status, LB2Status, LB3Status);
 }
