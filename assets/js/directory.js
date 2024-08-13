@@ -24,10 +24,11 @@ const ADraggableBox = `let array = [2, 6, 7]; \nconsole.log(array);`;
 const arrays = [ADescription, AExample, ALocationBox[0], ALocationBox[1], ALocationBox[2], ADraggableBox];
 //Card array links
 let cards = [consoleLog, dataTypes, variables, arrays];
-
+const API_KEY= "AIzaSyA9XgGFr0nanVMwYVnUpK2VNBxde6Nw67E"
+let query="console.log"
 function youTubeSearch(search) {
     const url=`https://www.googleapis.com/youtube/v3/search?q=${search}`
-   fetch (url) 
+   fetch (`{https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&key=${API_KEY}&maxResults=1&type=video`) 
    .then(function(response) {
     console.log (response)
     return response.json()
