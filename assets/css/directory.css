@@ -19,12 +19,14 @@
 .card header {
     text-decoration: underline;
     font-size: 17px;
+    display: block;
 }
 
 .modal {
-    width: 200px;
-    height: 400px;
+    width: 1000px;
+    height: 750px;
     display: block;
+    justify-self: center;
 }
 
 .modal-back {
@@ -39,17 +41,25 @@
 }
 
 .draggable-box {
-    width: 14px;
-    height: 6px;
+    width: 400px;
+    height: 200px;
     background-color: lightgrey;
     text-decoration: black;
+    display: block;
+    padding: 15px;
+}
+
+.boxesList{
+    display: block;
 }
 
 .location-box {
-    width: 14px;
-    height: 6px;
-    background-color: lightgrey;
+    width: 400px;
+    height: 200px;
+    background-color: lightblue;
     text-decoration: black;
+    display: inline-block;
+    padding: 15px;
 }
 
 #reponseIncorrect {
