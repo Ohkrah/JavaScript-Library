@@ -3,6 +3,10 @@
     src: url("../fonts/shadow.ttf") format("trueType");
 }
 
+ body{
+    background-image: url("../images/blackhue3.jpg"); 
+}
+
 .header {
     text-align: center;
     
@@ -17,18 +21,11 @@
     font-size: 18px;
     
 }
-/* body{
-    background-image: url("library.jpg");
-}
-  */
 .card{
     display:table-row-group;
    
 } 
-/* .card header {
-    text-decoration: underline;
-    font-size: 17px;
-} */
+
 
 .modal {
     width: 200px;
