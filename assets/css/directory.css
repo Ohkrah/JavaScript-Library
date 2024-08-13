@@ -3,8 +3,13 @@
     src: url("../fonts/shadow.ttf") format("trueType");
 }
 
+ body{
+    background-image: url("../images/blackhue3.jpg"); 
+}
+
 .header {
     text-align: center;
+    
 }
 
 .header h1 {
@@ -14,13 +19,21 @@
 
 .header p {
     font-size: 18px;
+    
 }
+.card{
+    display:table-row-group;
+   
+} 
 
+<<<<<<< HEAD
 .card header {
     text-decoration: underline;
     font-size: 17px;
     display: block;
 }
+=======
+>>>>>>> silvia/secondtrycards
 
 .modal {
     width: 1000px;

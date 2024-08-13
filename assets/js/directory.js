@@ -77,6 +77,7 @@ function cardLoader(){
         cardExampleNum = 0;
     }
 
+<<<<<<< HEAD
     //Data Types
     if(searchValue == cards[1][4]){
         cardTitle.replaceChildren(cards[1][4]);
@@ -184,3 +185,10 @@ function UserCorrectTest(){
     valueMatchTest();
     checkStatus();
 }
+=======
+/* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
+function theFunction(){
+const popup = document.getElementbyId("popUp");
+popup.toogle("show");
+} */
+>>>>>>> silvia/secondtrycards
