@@ -316,3 +316,146 @@ backButtonFour.addEventListener("click", function(){
   <section class="location-box"><!--location box variable 3 content here--></section>
   <h3 id="response"><!--user correct/incorrect--></h3>
 </div>*/
+
+/*Silvia's other card designs
+
+<!--Card with result (Syntax result name) in quotations [2]-->
+        <div class="columns is-mobile is-centered">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="assets/images/card2.jpg" alt="Placeholder image" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            Data Type Syntax:
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-8">Description:</p>
+                            <p class="title is-6">Data types are values that can be strings, numbers and booleans</p>
+    
+    
+                            <p class="title is-8">String " "</p>
+                            <p>A sting is urrounded by quotes</p>
+                            <p><b>Example:</b> const string = "example string";</p>
+    
+                            <p class="title is-8">Number</p>
+                            <p>A number can also be a decimal</p>
+                            <p><b>Example:</b> const number = 100;</p>
+    
+                            <p class="title is-8">Booleans</p>
+                            <p>A boolean are values that can either be true/false</p>
+                            <p><b>Example:</b> const boolean = True;</p>
+                            <p><b>Example:</b> const boolean = False;</p>
+    
+                        </div>
+    
+                        <div class="content"></div>
+                    </div>
+                    <div class="card">
+                    </div>
+                    <footer class="card-footer">
+                        <!--example button-->
+                        <!--small pop-up box to show the example when clicked-->
+                        <a href="#" class="card-footer-item">Example</a>
+                        <a href="#" class="card-footer-item">Try me</a>
+                        <a href="#" class="card-footer-item">Video</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!--Card with result (Syntax result name) in quotations [3]-->
+        <div class="columns is-mobile is-centered">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="assets/images/card3.png" alt="Placeholder image" />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            Variable Syntax:
+                        </div>
+                        <div class="media-content">
+                            <p class="title is-8">Description:</p>
+                            <p class="title is-6">A variable is a container that is created to store values </p>
+    
+    
+                            <p class="title is-8">Let</p>
+                            <p>Using a let variable you can <br>change the value of the variable through out the code</p>
+                            <p><b>Example:</b> let variablename = ____;</p>
+    
+                            <p class="title is-8">Const</p>
+                            <p>Using a const variable the value can not change </p>
+                            <p><b>Example:</b> const variablename = ____;</p>
+                        </div>
+    
+                        <div class="content">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                    </div>
+                    <footer class="card-footer">
+                        <!--example button-->
+                        <!--small pop-up box to show the example when clicked-->
+                        <a href="#" class="card-footer-item">Example</a>
+                        <a href="#" class="card-footer-item">Try me</a>
+                        <a href="#" class="card-footer-item">Video</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    
+        <!--Card with result (Syntax result name) in quotations [4]-->
+        
+            <div class="columns is-mobile is-centered">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="assets/images/card4.jpg" alt="Placeholder image" />
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                            Array Syntax:
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-8">Description:</p>
+                                <p class="title is-6">An array can carry strings, numbers and booleans for variable</p>
+    
+    
+                                <p class="title is-8"> [ ]</p>
+                                <p>Using a let variable you can <br>change the value of the variable through out the code
+                                </p>
+                                <p><b>Example:</b> let variablename = [ ] ;</p>
+                                <p><b>Example:</b> const variablename = [ ];</p>
+                            </div>
+    
+    
+                            <div class="content">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                        </div>
+                        <footer class="card-footer">
+                            <!--example button-->
+                            <!--small pop-up box to show the example when clicked-->
+
+                            <!-- <div class="popup" onclick="myFunction()"> Example
+                                <span class="popuptext" id="myPopup"> THE CONTENT GOES IN HERE FOR THE EXAMPLE !!!</span> -->
+                            <a href="#" class="card-footer-item">Example</a>
+                            <a href="#" class="card-footer-item">Try me</a>
+                            <a href="#" class="card-footer-item">Video</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            */
