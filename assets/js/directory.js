@@ -77,7 +77,6 @@ function cardLoader(){
         cardExampleNum = 0;
     }
 
-<<<<<<< HEAD
     //Data Types
     if(searchValue == cards[1][4]){
         cardTitle.replaceChildren(cards[1][4]);
@@ -186,10 +185,134 @@ function UserCorrectTest(){
     checkStatus();
     console.log(LB1Status, LB2Status, LB3Status);
 }
-=======
 /* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
 function theFunction(){
 const popup = document.getElementbyId("popUp");
 popup.toogle("show");
 } */
->>>>>>> silvia/secondtrycards
+
+//Bradyn JS Code
+
+//4 modals we are interacting with
+//const modalConsole = document.getElementById ("modal-popUp-console");
+//const modalString = document.getElementById ("modal-popUp-strings");
+//const modalVariables = document.getElementById ("modal-popUp-variables");
+//const modalArray = document.getElementById ("modal-popUp-array");
+
+//define functions & define to close the modals
+/*const consoleButton = document.getElementById ("consoleButton");
+const stringButton = document.getElementById ("stringButton");
+const variableButton = document.getElementById ("variableButton");
+const arrayButton = document.getElementById ("arrayButton");
+
+const backButton = document.getElementById ("back-button-modal");
+const backButtonTwo = document.getElementById ("back-button-modal-two");
+const backButtonThree = document.getElementById ("back-button-modal-three");
+const backButtonFour = document.getElementById ("back-button-modal-four");
+
+consoleButton.addEventListener("click", function(){
+    modalConsole.classList.add("is-active")
+});
+
+stringButton.addEventListener("click", function(){
+    modalString.classList.add("is-active")
+});
+
+variablesButton.addEventListener("click", function(){
+    modalVariables.classList.add("is-active")
+});
+
+arrayButton.addEventListener("click", function(){
+    modalArray.classList.add("is-active")
+});
+
+backButton.addEventListener("click", function(){
+    modalConsole.classList.remove("is-active")
+    modalString.classList.remove("is-active")
+    modalVariables.classList.remove("is-active")
+    modalArray.classList.remove("is-active")
+});
+
+backButtonTwo.addEventListener("click", function(){
+    modalConsole.classList.remove("is-active")
+    modalString.classList.remove("is-active")
+    modalVariables.classList.remove("is-active")
+    modalArray.classList.remove("is-active")
+});
+
+backButtonThree.addEventListener("click", function(){
+    modalConsole.classList.remove("is-active")
+    modalString.classList.remove("is-active")
+    modalVariables.classList.remove("is-active")
+    modalArray.classList.remove("is-active")
+});
+
+backButtonFour.addEventListener("click", function(){
+    modalConsole.classList.remove("is-active")
+    modalString.classList.remove("is-active")
+    modalVariables.classList.remove("is-active")
+    modalArray.classList.remove("is-active")
+});
+
+// window.addEventListener("click", function(event){
+//     if (event.target === modalConsole) {
+//         modalConsole.classList.remove
+//     }
+//     if (event.target === modalString) {
+//         modalString.classList.remove
+//     }
+//     if (event.target === modalVariables) {
+//         modalVariables.classList.remove
+//     }
+//     if (event.target === modalArray) {
+//         modalArray.classList.remove
+//     }
+// });
+
+
+//Bradyn's HTML 
+
+//For directory.html modal
+<!-- <div class="modal" id="modal-popUp-strings"> <!--add `is-active` to class to test modal-->
+      <!--back button to results-->
+      <button class="modal-back" type="button" id="back-button-modal-two">Back</button>
+      <!--Instructions-->
+      <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
+      <!--draggable box-->
+      <section class="draggable-box"><!--draggable box variable content here--></section>
+      <!--option one of drag locaction-->
+      <section class="location-box"><!--location box variable content here--></section>
+      <!--option two of drag locaction-->
+      <section class="location-box"><!--location box variable 2 content here--></section>
+      <!--option three of drag locaction-->
+      <section class="location-box"><!--location box variable 3 content here--></section>
+      <!--words to show user they are inccorect/correct-->
+      <h3 id="response"><!--user correct/incorrect--></h3>
+  </div>
+
+  <div class="modal" id="modal-popUp-variables"> <!--add `is-active` to class to test modal-->
+    <!--back button to results-->
+    <button class="modal-back" type="button" id="back-button-modal-three">Back</button>
+    <!--Instructions-->
+    <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
+    <!--draggable box-->
+    <section class="draggable-box"><!--draggable box variable content here--></section>
+    <!--option one of drag locaction-->
+    <section class="location-box"><!--location box variable content here--></section>
+    <!--option two of drag locaction-->
+    <section class="location-box"><!--location box variable 2 content here--></section>
+    <!--option three of drag locaction-->
+    <section class="location-box"><!--location box variable 3 content here--></section>
+    <!--words to show user they are inccorect/correct-->
+    <h3 id="response"><!--user correct/incorrect--></h3>
+</div>
+
+<div class="modal" id="modal-popUp-array"> <!--add `is-active` to class to test modal-->
+  <button class="modal-back" type="button" id="back-button-modal-four">Back</button>
+  <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
+  <section class="draggable-box"><!--draggable box variable content here--></section>
+  <section class="location-box"><!--location box variable content here--></section>
+  <section class="location-box"><!--location box variable 2 content here--></section>
+  <section class="location-box"><!--location box variable 3 content here--></section>
+  <h3 id="response"><!--user correct/incorrect--></h3>
+</div>*/

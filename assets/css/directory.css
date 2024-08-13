@@ -26,14 +26,11 @@
    
 } 
 
-<<<<<<< HEAD
 .card header {
     text-decoration: underline;
     font-size: 17px;
     display: block;
 }
-=======
->>>>>>> silvia/secondtrycards
 
 .modal {
     width: 1000px;
