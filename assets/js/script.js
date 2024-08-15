@@ -1,3 +1,6 @@
+
+//search value
+const search = document.getElementById(`search`);
 // Define ID for button
 function validateSearch() {
     const searchInput = document.getElementById('searchInput').value;
@@ -10,24 +13,35 @@ function validateSearch() {
     }
 }
 
+//function to clear search history
+function clearSearchHistory(){
+    localStorage.clear();
+}
 
-
+//added variable to store array values in local storage and access them 
+const getItemArray = JSON.parse(localStorage.getItem('getItemArray')) || [];
+let inputData = document.getElementById('searchInput').value;
 
 
 function storeData (event){
-    event.preventDefault();
+    
+    
+   
+    inputData = document.getElementById('searchInput').textContent;
+    
+    const keyValues =document.getElementById('searchInput').value;
 
-    const getItemArray = JSON.parse(localStorgae.getItem('getItemArray')) || [];
-    const inputData = document.getElementById('searchInput').value;
-  
-    const keyValues ={
-        syntax: inputData,
-    }
- inputData.push(keyValues);
+    getItemArray.push(keyValues);
     
     localStorage.setItem('getItemArray',JSON.stringify(getItemArray));
+    
 
-    window.location.href="directory.html";
 }
 
 // add a event to the search button is clicked using its ID 
+search.addEventListener(`click`, function(){
+    storeData();
+    if(getItemArray.includes(inputData)){
+        window.location.href="directory.html";
+    }
+});

@@ -45,30 +45,37 @@ const ADraggableBox = `let array = [2, 6, 7]; \nconsole.log(array);`;
 const arrays = [ADescription, AExample, ALocationBox, ADraggableBox, AName];
 //Card array links
 let cards = [consoleLog, dataTypes, variables, arrays];//holds the arrays that access the variables for card values
-/*temporarily add array to local storage to test functionality*/
-let testArray = ["Array" , "data types"];
+const cardNames = ["console log", "data types", "variables", "arrays"]
 //Initialize searchValue variable
 let searchValue;
-localStorage.setItem("searchResult", JSON.stringify(testArray));
+localStorage.setItem("searchResult", localStorage.getItem(`getItemArray`));
 //intialize card example number
 let cardExampleNum;
 let DBExample;
-
-function modalOpperation(){
+//variable to determine if modal has loaded
+let modalLoad = false;
+//iniitialize value to hold tryme button
+const tryMe = document.getElementById(`tryMe`);
 //load search result from local storage
 const searchResult = JSON.parse(localStorage.getItem(`searchResult`));
+console.log(JSON.stringify(searchResult[searchResult.length-1]));
+console.log(JSON.stringify(cardNames));
 function searchCompare(){
-    if (JSON.stringify(cards).includes(JSON.stringify(searchResult[0]))){
-        searchValue = searchResult[0];
+    if (JSON.stringify(cardNames).includes(JSON.stringify(searchResult[searchResult.length-1]))){
+        searchValue = JSON.stringify(searchResult[searchResult.length-1]);
+    console.log(searchValue)
+    console.log(JSON.stringify(cards[0][4]))
+    cardLoader();
     }
     else {
         //take to error page
+        window.location.replace("file:///C:/Users/Deuce/Bootcamp/Projects/Project-1-/error.html#");
     }
 }
 //cards loader function
 function cardLoader(){
     //Console Log
-    if(searchValue == cards[0][4]){
+    if(searchValue == JSON.stringify(cardNames[0])){
         cardTitle.replaceChildren(cards[0][4]);
         description.replaceChildren(cards[0][0]);
         example.replaceChildren(cards[0][1]);
@@ -77,10 +84,12 @@ function cardLoader(){
         LB3.replaceChildren(cards[0][2][2]);
         DB.replaceChildren(cards[0][3]);
         cardExampleNum = 0;
+        console.log("loading if statement");
+        modalLoad=true;
     }
 
     //Data Types
-    if(searchValue == cards[1][4]){
+    else if(searchValue == JSON.stringify(cardNames[1])){
         cardTitle.replaceChildren(cards[1][4]);
         description.replaceChildren(cards[1][0]);
         example.replaceChildren(cards[1][1]);
@@ -89,20 +98,24 @@ function cardLoader(){
         LB3.replaceChildren(cards[1][2][2]);
         DB.replaceChildren(cards[1][3]);
         cardExampleNum=1;
+        console.log("loading if statement");
+        modalLoad=true;
     }
     //Variables
-    if(searchValue ==cards[2][4]){
+    else if(searchValue ==JSON.stringify(cardNames[2])){
         cardTitle.replaceChildren(cards[2][4]);
         description.replaceChildren(cards[2][0]);
         example.replaceChildren(cards[2][1]);
         LB1.replaceChildren(cards[2][2][0]);
         LB2.replaceChildren(cards[2][2][1]);
-        LB3.replacChildren(cards[2][2][2]);
+        LB3.replaceChildren(cards[2][2][2]);
         DB.replaceChildren(cards[2][3]);
         cardExampleNum = 2;
+        console.log("loading if statement");
+        modalLoad=true;
     }
     //Arrays
-    if(searchValue == cards[3][4]){
+    else if(searchValue == JSON.stringify(cardNames[3])){
         cardTitle.replaceChildren(cards[3][4]);
         description.replaceChildren(cards[3][0]);
         example.replaceChildren(cards[3][1]);
@@ -111,11 +124,21 @@ function cardLoader(){
         LB3.replaceChildren(cards[3][2][2]);
         DB.replaceChildren(cards[3][3]);
         cardExampleNum=3;
+        console.log("loading if statement");
+        modalLoad=true;
     }
+
 }
 //run functions 
 searchCompare();
-cardLoader();
+if (modalLoad){
+    tryMe.addEventListener("click", activeModal);
+}
+
+//run the modal
+function modalOpperation(){
+
+
 //Modal back button
 const modal = document.getElementById(`modal-popUp`);
 const modalBackButton = document.getElementById(`back-button-modal`);
@@ -129,7 +152,7 @@ const LBCorrectAnswer = [$(CLLocationBox[0]), $(DTLocationBox[1]), $(VLocationBo
 DBExample = [$(CLLocationBox[0]), $(DTLocationBox[1]), $(VLocationBox[2]), $(ALocationBox[0])];
 LBVariable = LBVariableArray[cardExampleNum];
 function valueMatchTest(){
-    if(DBExample[cardExampleNum] === LBVariable[cardExampleNum]){
+    if(DBExample[cardExampleNum] === LBVariable){
         valueMatch = true
     }
     else{
@@ -193,8 +216,13 @@ function UserCorrectTest(){
 }
 
 }
+//function to activate modal
+function activeModal(){
+    console.log("registering click");
+    document.getElementById(`modal-popUp`).classList.add("is-active");
+    modalOpperation();
+}
 
-modalOpperation();
 /* >>> this is for the example button when is clicked pop up will show , target with vanilla JS or Jquery? 
 function theFunction(){
 const popup = document.getElementbyId("popUp");
