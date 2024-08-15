@@ -15,19 +15,20 @@
 
 <body>
     <header class="header">
-        <h1>Welcome to the store!</h1>
+        <h1>Welcome to the code syntax library</h1>
         <p>
-            When you change the screen size, the product cards will change layouts
-            so you can view them comfortably no matter how small the screen gets!
+            This library displays common use Javascript syntax, along with a video related to the subject matter. If you
+            want to test your knowleage you may click on the "Try Me" buutton and use the interactive learning tool!
+            Have fun learning!
         </p>
     </header>
-    
-    
+
+
     <a href="index.html" button class="button is-medium is-responsive">
         Return Back To Search</button></a>
     <!--back button to brink back to search-->
     <!--Header (Search result)-->
-    
+
     <main>
         <!--Card with result (Syntax result name) in quotations [1]-->
         <div class="columns is-mobile is-centered">
@@ -48,9 +49,9 @@
                             <p class="subtitle is-4" id="example"></p>
                         </div>
                     </div>
-    
+
                     <div class="content" id="description">
-                        
+
                     </div>
                 </div>
                 <div class="card">
@@ -58,25 +59,24 @@
                 <footer class="card-footer">
                     <a href="#" class="card-footer-item">Example</a>
                     <a href="#" class="card-footer-item">Try me</a>
-                    <a href="#" class="card-footer-item js-modal-trigger">Video</a>
-                        <!-- YouTube modal -->
-                        <div id="modal-string-numbers-boolean" class="modal container">
-                            <div class="modal-background"></div>
-                    
-                            <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/L8CDt1J3DAw?si=BzngbSqWCmcvkwMX"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            </div>
-                        </div>
+                    <button type="button" class="js-modal-trigger" data-target="modal-array">Video</button>
                 </footer>
+                <!-- YouTube modal -->
+                <div id="modal-array" class="modal container">
+                    <div class="modal-background"></div>
+
+                    <div class="modal-content">
+                        <iframe id="randomYtVideo" width="560" height="315"
+                            src="https://www.youtube.com/embed/oigfaZ5ApsM?si=kSvDwG1vnkO_2iCH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <button class="modal-close is-large" aria-label="close"></button>
             </div>
-        </div>
-        
-        </div>
-        </div>
+
 
     </main>
 
@@ -88,11 +88,12 @@
         <li class="boxesList">
             <h3 id="Instructions">Drag and drop syntax box to matching output</h3>
             <!--draggable box-->
-            <section id="draggableBox" class="draggable-box" type=""><!--draggable box variable content here--></section>
+            <section id="draggableBox" class="draggable-box" type=""><!--draggable box variable content here-->
+            </section>
             <!--option one of drag locaction-->
             <section id="locationBox1" class="location-box"><!--location box variable content here--></section>
             <!--option two of drag locaction-->
-            <section id= "locationBox2" class="location-box"><!--location box variable 2 content here--></section>
+            <section id="locationBox2" class="location-box"><!--location box variable 2 content here--></section>
             <!--option three of drag locaction-->
             <section id="locationBox3" class="location-box"><!--location box variable 3 content here--></section>
         </li>
@@ -102,10 +103,10 @@
     <!--video button-->
     <!--link to tutorial playlist in new page-->
 
-    
-    
-    
-    
+
+
+
+
 </body>
 
 <!--API links-->
