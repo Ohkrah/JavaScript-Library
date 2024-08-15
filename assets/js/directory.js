@@ -176,6 +176,7 @@ valueMatchTest();
 
 //intialize function to check status of each box and print out correct, if statement is true
 const checkStatus = function(){
+    console.log(179, LB1Status, LB2Status, LB3Status, valueMatch);
     if(LB1Status && valueMatch){$(`#response`).addClass("responseCorrect");
         $(`#response`).removeClass("responseIncorrect");
         response.replaceChildren("You are correct!!");
@@ -200,15 +201,13 @@ $( function() {
     $( "#draggableBox" ).draggable();
     $( ".location-box").droppable({
         drop: function( event, ui ) {
-            //LBCheck();
-            valueMatchTest();
-            checkStatus();
-            UserCorrectTest();
+        
+        userCorrectTest();
       }
     });
   } );
 //User correct test
-function UserCorrectTest(){
+function userCorrectTest(){
     //LBCheck();
     valueMatchTest();
     checkStatus();
