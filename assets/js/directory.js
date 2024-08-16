@@ -360,3 +360,13 @@ backButtonFour.addEventListener("click", function(){
   <section class="location-box"><!--location box variable 3 content here--></section>
   <h3 id="response"><!--user correct/incorrect--></h3>
 </div>*/
+
+//<script>
+       // var pass;
+      //  pass = prompt("Search Syntax Key Word Here");
+      //  if(pass == "Varriables", "Data Types", "Console log", "Array"){
+       //     <a href="directory.html">This is the link</a>       
+       // } else {
+      //  <a href="error.html"></a>
+     //   }
+ //   </script> 
