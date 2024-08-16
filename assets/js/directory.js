@@ -79,7 +79,7 @@ function cardLoader(){
         cardTitle.replaceChildren(cards[0][4]);
         description.replaceChildren(cards[0][0]);
         example.replaceChildren(cards[0][1]);
-        LB1.replaceWith(cards[0][2][0]);
+        LB1.replaceChildren(cards[0][2][0]);
         LB2.replaceChildren(cards[0][2][1]);
         LB3.replaceChildren(cards[0][2][2]);
         DB.replaceChildren(cards[0][3]);
