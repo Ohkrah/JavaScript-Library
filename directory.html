@@ -15,14 +15,16 @@
 
 <body>
     <header class="header">
-        <h1>Welcome to the store!</h1>
-        <p>
-            When you change the screen size, the product cards will change layouts
-            so you can view them comfortably no matter how small the screen gets!
+        <h1>Welcome to JS Syntax Library</h1>
+        <p> 
+            This library display common use Javascript syntax, along with a video related to the subject matter
+            If you want to test your knowledge you may click on the “Try Me” button and use the interactive learning tool! 
+            Have fun learning !
+            
         </p>
     </header>
-    
-    
+
+
     <a href="index.html" button class="button is-medium is-responsive">
         Return Back To Search</button></a>
     <!--back button to brink back to search-->
@@ -46,37 +48,37 @@
                             <p class="title is-8" id="cardTitle"></p>
                             <p class="subtitle is-4"></p>
                             <p class="subtitle is-4" id="example"></p>
+                            <p class="subtitle is-4" id="example"></p>
                         </div>
                     </div>
     
                     <div class="content" id="description">
-                        
                     </div>
                 </div>
                 <div class="card">
                 </div>
                 <footer class="card-footer">
-                    <a href="#" class="card-footer-item">Example</a>
-                    <a href="#" class="card-footer-item">Try me</a>
-                    <a href="#" class="card-footer-item js-modal-trigger">Video</a>
-                        <!-- YouTube modal -->
-                        <div id="modal-string-numbers-boolean" class="modal container">
-                            <div class="modal-background"></div>
+                    <button type ="button" class=btn btn-outline-secondary data-toogle="popover" title="Example" data-content="let variablename =[]; const variablename=[];">Example</button>   
                     
-                            <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/L8CDt1J3DAw?si=BzngbSqWCmcvkwMX"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            </div>
-                        </div>
+                    <a href="#" class="card-footer-item">Try me</a>
+                    <button type="button" class="js-modal-trigger" data-target="modal-array">Video</button>
                 </footer>
+                <!-- YouTube modal -->
+                <div id="modal-array" class="modal container">
+                    <div class="modal-background"></div>
+
+                    <div class="modal-content">
+                        <iframe id="randomYtVideo" width="560" height="315"
+                            src="https://www.youtube.com/embed/oigfaZ5ApsM?si=kSvDwG1vnkO_2iCH"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <button class="modal-close is-large" aria-label="close"></button>
             </div>
-        </div>
-        
-        </div>
-        </div>
+
 
     </main>
 

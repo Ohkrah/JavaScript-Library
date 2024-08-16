@@ -1,8 +1,18 @@
-/* Video API modal code
+// /* Video API modal code
 
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
+      console.log("openYouTube")
+      const iframe = document.getElementById("randomYtVideo")
+      console.log("iframe", iframe);
+      // GET {base_URL}/search?part=snippet
+      //                &q=YouTube+Data+API
+      //                &type=video
+      //                &videoCaption=closedCaption
+      //                &key=key=API_KEY
+      const basepath= "https://www.googleapis.com/youtube/v3/search?"
+      const youTubeUrl= basepath+""
       $el.classList.add('is-active');
     }
   
@@ -42,4 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  */
+  

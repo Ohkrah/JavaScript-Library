@@ -18,7 +18,8 @@
         <p>JAVASCRIPT SYNTAX LIBRARY</p>
         <div class="searchBar">
             <input type="text" id="searchInput" placeholder="Search Syntax Key Word Here" style="background-color: rgb(160, 159, 159) !important; border: none; width: 70%;">
-            <button onclick="validateSearch()">🔍</button>
+            <button id="search">🔍</button>
+            <button id="clearLocalStorage" onclick="clearSearchHistory()">Clear Search History</button>
         </div>
     </section>
     <section name="body" class="description">
@@ -26,9 +27,19 @@
             preloaded topics provided. It's a valuable tool for beginner developers, offering easy access to popular
             learning resources, especially for those in their first 12 months of coding.</p>
     </section>
-    <section name="footer" class="repo">
-        <p>Link to Repo: https://github.com/Ohkrah/Project-1-</p>
-    </section>
+    
+<div class="columns is-mobile is-centered">
+    <footer class="card-footer">
+        <a class="buttons">
+            <button class="button is-large">
+                <span class="icon is-medium">
+                    <i class="fab fa-github"></i>
+                </span>
+                <span href="https://github.com/Ohkrah/JavaScript-Library.git">GitHub</span>
+                </button>
+            </a>
+        </footer>
+     </div>
     <!--alert error: search not found in library-->
 
     <!--API links-->
