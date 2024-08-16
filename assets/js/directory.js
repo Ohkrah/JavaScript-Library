@@ -138,6 +138,11 @@ if (modalLoad){
 //run the modal
 function modalOpperation(){
 
+    //set LocationBoxStatus to false for all boxes
+    function resetStatus(){
+    LB1Status = false;
+    LB2Status = false;
+    LB3Status = false;}
 
 //Modal back button
 const modal = document.getElementById(`modal-popUp`);
@@ -161,18 +166,21 @@ function valueMatchTest(){
 }
 valueMatchTest();
 //create function to test for all LB values match DB
-//function LBCheck(){
+function LBCheck(){
             //add event listener to recognize when draggable is on droppable
             LB1.addEventListener(`mouseenter`,function(){
+                console.log(173, "recognizing drop")
                 LB1Status=true;
             })
             LB2.addEventListener(`mouseenter`,function(){
+                console.log(173, "recognizing drop")
                 LB2Status=true;
             })
             LB3.addEventListener(`mouseenter`,function(){
+                console.log(173, "recognizing drop")
                 LB3Status=true;
             })
-//}
+}
 
 //intialize function to check status of each box and print out correct, if statement is true
 const checkStatus = function(){
@@ -201,7 +209,8 @@ $( function() {
     $( "#draggableBox" ).draggable();
     $( ".location-box").droppable({
         drop: function( event, ui ) {
-        
+        resetStatus();
+        LBCheck();
         userCorrectTest();
       }
     });

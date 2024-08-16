@@ -7,7 +7,7 @@ function validateSearch() {
     let isValidSearch = false;
 
     if (!searchInput.trim()) {
-        alert('Search not found in library.');
+        alert('Search Invalid.');
     } else {
         // Proceed with your search logic
         console.log('Searching for: ' + searchInput);
