@@ -3,28 +3,33 @@
     src: url("../fonts/shadow.ttf") format("trueType");
 }
 
- body{
-    background-image: url("../images/blackhue3.jpg"); 
+body {
+    background-image: url("../images/blackhue3.jpg");
 }
 
 .header {
     text-align: center;
-    
+
 }
 
 .header h1 {
     font-family: "shadowFont", sans-serif;
     font-size: 60px;
+    color: aliceblue;
+
+
 }
 
 .header p {
-    font-size: 18px;
-    
+    font-size: 24px;
+    color: aqua;
+
 }
-.card{
-    display:table-row-group;
-   
-} 
+
+.card {
+    display: table-row-group;
+
+}
 
 .card header {
     text-decoration: underline;
@@ -59,7 +64,7 @@
     padding: 15px;
 }
 
-.boxesList{
+.boxesList {
     display: block;
 }
 
@@ -84,4 +89,17 @@
     text-decoration: green;
     font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/* Video Button CSS */
+body>main>div>div>footer>button {
+    background-color: crimson;
+    color: white;
+
+}
+
+
+#button:hover {
+    background-color: brown;
+    text-size-adjust: 25px;
 }
