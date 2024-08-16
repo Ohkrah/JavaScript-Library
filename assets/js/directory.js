@@ -69,7 +69,7 @@ function searchCompare(){
     }
     else {
         //take to error page
-        window.location.replace("file:///C:/Users/Deuce/Bootcamp/Projects/Project-1-/error.html#");
+        window.location.replace("./error.html#");
     }
 }
 //cards loader function
